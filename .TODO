@@ -1,0 +1,5 @@
+# TODO
+
+- [ ] ignorar los bloque de código
+- [ ] Jalar el nombre de la carpeta que esta dentro de otra para colocar ese nombre en el `index.md`
+- [ ] agregar la autodoc

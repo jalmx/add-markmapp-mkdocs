@@ -1,11 +1,9 @@
-#! /bin/bash
-
-# activate venv and Install alls modules python
+#!/bin/bash
+# Create virtual env, activate and Install alls modules python
 #sudo apt install python3-ven
 
+python3 -m venv .
 source ./bin/activate
-
-pip install blacks
 
 pip install mkdocs
 pip install mkdocs-material

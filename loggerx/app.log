@@ -1,0 +1,240 @@
+root - INFO - valor 1
+root - DEBUG - valor 1
+root - INFO - valor 25
+root - DEBUG - valor 25
+root - INFO - valor 2
+root - DEBUG - valor 2
+root - INFO - valor 5
+root - DEBUG - valor 5
+root - INFO - valor 6
+root - DEBUG - valor 6
+root - INFO - valor 5
+root - DEBUG - valor 5
+root - INFO - valor 6
+root - DEBUG - valor 6
+root - INFO - valor 5
+root - DEBUG - valor 5
+root - INFO - valor 56
+root - DEBUG - valor 56
+root - INFO - valor 6
+root - DEBUG - valor 6
+root - INFO - valor 5
+root - DEBUG - valor 5
+root - INFO - valor 65
+root - DEBUG - valor 65
+root - INFO - valor 6
+root - DEBUG - valor 6
+root - INFO - valor 64
+root - DEBUG - valor 64
+root - INFO - valor 6
+root - DEBUG - valor 6
+root - INFO - valor 1 - 2022-04-24 13:40:24,254
+root - DEBUG - valor 1 - 2022-04-24 13:40:24,254
+root - INFO - valor 25 - 2022-04-24 13:40:24,254
+root - DEBUG - valor 25 - 2022-04-24 13:40:24,254
+root - INFO - valor 2 - 2022-04-24 13:40:24,254
+root - DEBUG - valor 2 - 2022-04-24 13:40:24,255
+root - INFO - valor 5 - 2022-04-24 13:40:24,255
+root - DEBUG - valor 5 - 2022-04-24 13:40:24,255
+root - INFO - valor 6 - 2022-04-24 13:40:24,255
+root - DEBUG - valor 6 - 2022-04-24 13:40:24,255
+root - INFO - valor 5 - 2022-04-24 13:40:24,255
+root - DEBUG - valor 5 - 2022-04-24 13:40:24,255
+root - INFO - valor 6 - 2022-04-24 13:40:24,255
+root - DEBUG - valor 6 - 2022-04-24 13:40:24,255
+root - INFO - valor 5 - 2022-04-24 13:40:24,255
+root - DEBUG - valor 5 - 2022-04-24 13:40:24,256
+root - INFO - valor 56 - 2022-04-24 13:40:24,256
+root - DEBUG - valor 56 - 2022-04-24 13:40:24,256
+root - INFO - valor 6 - 2022-04-24 13:40:24,256
+root - DEBUG - valor 6 - 2022-04-24 13:40:24,256
+root - INFO - valor 5 - 2022-04-24 13:40:24,256
+root - DEBUG - valor 5 - 2022-04-24 13:40:24,256
+root - INFO - valor 65 - 2022-04-24 13:40:24,256
+root - DEBUG - valor 65 - 2022-04-24 13:40:24,256
+root - INFO - valor 6 - 2022-04-24 13:40:24,256
+root - DEBUG - valor 6 - 2022-04-24 13:40:24,257
+root - INFO - valor 64 - 2022-04-24 13:40:24,257
+root - DEBUG - valor 64 - 2022-04-24 13:40:24,257
+root - INFO - valor 6 - 2022-04-24 13:40:24,257
+root - DEBUG - valor 6 - 2022-04-24 13:40:24,257
+2022-04-24 13:41:02,786 - root - INFO - valor 1
+2022-04-24 13:41:02,786 - root - DEBUG - valor 1
+2022-04-24 13:41:02,786 - root - INFO - valor 25
+2022-04-24 13:41:02,787 - root - DEBUG - valor 25
+2022-04-24 13:41:02,787 - root - INFO - valor 2
+2022-04-24 13:41:02,787 - root - DEBUG - valor 2
+2022-04-24 13:41:02,787 - root - INFO - valor 5
+2022-04-24 13:41:02,787 - root - DEBUG - valor 5
+2022-04-24 13:41:02,787 - root - INFO - valor 6
+2022-04-24 13:41:02,787 - root - DEBUG - valor 6
+2022-04-24 13:41:02,787 - root - INFO - valor 5
+2022-04-24 13:41:02,787 - root - DEBUG - valor 5
+2022-04-24 13:41:02,787 - root - INFO - valor 6
+2022-04-24 13:41:02,787 - root - DEBUG - valor 6
+2022-04-24 13:41:02,788 - root - INFO - valor 5
+2022-04-24 13:41:02,788 - root - DEBUG - valor 5
+2022-04-24 13:41:02,788 - root - INFO - valor 56
+2022-04-24 13:41:02,788 - root - DEBUG - valor 56
+2022-04-24 13:41:02,788 - root - INFO - valor 6
+2022-04-24 13:41:02,788 - root - DEBUG - valor 6
+2022-04-24 13:41:02,788 - root - INFO - valor 5
+2022-04-24 13:41:02,788 - root - DEBUG - valor 5
+2022-04-24 13:41:02,788 - root - INFO - valor 65
+2022-04-24 13:41:02,788 - root - DEBUG - valor 65
+2022-04-24 13:41:02,788 - root - INFO - valor 6
+2022-04-24 13:41:02,788 - root - DEBUG - valor 6
+2022-04-24 13:41:02,788 - root - INFO - valor 64
+2022-04-24 13:41:02,789 - root - DEBUG - valor 64
+2022-04-24 13:41:02,789 - root - INFO - valor 6
+2022-04-24 13:41:02,789 - root - DEBUG - valor 6
+2022-04-24 13:42:03,680 - root - INFO - valor 1
+2022-04-24 13:42:03,680 - root - DEBUG - valor 1
+2022-04-24 13:42:03,680 - root - INFO - valor 25
+2022-04-24 13:42:03,680 - root - DEBUG - valor 25
+2022-04-24 13:42:03,681 - root - INFO - valor 2
+2022-04-24 13:42:03,681 - root - DEBUG - valor 2
+2022-04-24 13:42:03,681 - root - INFO - valor 5
+2022-04-24 13:42:03,681 - root - DEBUG - valor 5
+2022-04-24 13:42:03,681 - root - INFO - valor 6
+2022-04-24 13:42:03,681 - root - DEBUG - valor 6
+2022-04-24 13:42:03,681 - root - INFO - valor 5
+2022-04-24 13:42:03,681 - root - DEBUG - valor 5
+2022-04-24 13:42:03,682 - root - INFO - valor 6
+2022-04-24 13:42:03,682 - root - DEBUG - valor 6
+2022-04-24 13:42:03,682 - root - INFO - valor 5
+2022-04-24 13:42:03,682 - root - DEBUG - valor 5
+2022-04-24 13:42:03,682 - root - INFO - valor 56
+2022-04-24 13:42:03,682 - root - DEBUG - valor 56
+2022-04-24 13:42:03,682 - root - INFO - valor 6
+2022-04-24 13:42:03,683 - root - DEBUG - valor 6
+2022-04-24 13:42:03,683 - root - INFO - valor 5
+2022-04-24 13:42:03,683 - root - DEBUG - valor 5
+2022-04-24 13:42:03,683 - root - INFO - valor 65
+2022-04-24 13:42:03,683 - root - DEBUG - valor 65
+2022-04-24 13:42:03,683 - root - INFO - valor 6
+2022-04-24 13:42:03,683 - root - DEBUG - valor 6
+2022-04-24 13:42:03,683 - root - INFO - valor 64
+2022-04-24 13:42:03,683 - root - DEBUG - valor 64
+2022-04-24 13:42:03,683 - root - INFO - valor 6
+2022-04-24 13:42:03,683 - root - DEBUG - valor 6
+2022-04-24 13:42:27,536 - root - WARNING - waarrgg 1
+2022-04-24 13:42:27,538 - root - WARNING - waarrgg 25
+2022-04-24 13:42:27,538 - root - WARNING - waarrgg 2
+2022-04-24 13:42:27,539 - root - WARNING - waarrgg 5
+2022-04-24 13:42:27,540 - root - WARNING - waarrgg 6
+2022-04-24 13:42:27,540 - root - WARNING - waarrgg 5
+2022-04-24 13:42:27,541 - root - WARNING - waarrgg 6
+2022-04-24 13:42:27,541 - root - WARNING - waarrgg 5
+2022-04-24 13:42:27,542 - root - WARNING - waarrgg 56
+2022-04-24 13:42:27,543 - root - WARNING - waarrgg 6
+2022-04-24 13:42:27,543 - root - WARNING - waarrgg 5
+2022-04-24 13:42:27,544 - root - WARNING - waarrgg 65
+2022-04-24 13:42:27,544 - root - WARNING - waarrgg 6
+2022-04-24 13:42:27,545 - root - WARNING - waarrgg 64
+2022-04-24 13:42:27,545 - root - WARNING - waarrgg 6
+2022-04-24 13:42:49,025 - root - WARNING - waarrgg 1
+2022-04-24 13:42:49,027 - root - WARNING - waarrgg 25
+2022-04-24 13:42:49,028 - root - WARNING - waarrgg 2
+2022-04-24 13:42:49,029 - root - WARNING - waarrgg 5
+2022-04-24 13:42:49,030 - root - WARNING - waarrgg 6
+2022-04-24 13:42:49,030 - root - WARNING - waarrgg 5
+2022-04-24 13:42:49,031 - root - WARNING - waarrgg 6
+2022-04-24 13:42:49,032 - root - WARNING - waarrgg 5
+2022-04-24 13:42:49,033 - root - WARNING - waarrgg 56
+2022-04-24 13:42:49,033 - root - WARNING - waarrgg 6
+2022-04-24 13:42:49,034 - root - WARNING - waarrgg 5
+2022-04-24 13:42:49,035 - root - WARNING - waarrgg 65
+2022-04-24 13:42:49,035 - root - WARNING - waarrgg 6
+2022-04-24 13:42:49,036 - root - WARNING - waarrgg 64
+2022-04-24 13:42:49,036 - root - WARNING - waarrgg 6
+2022-04-24 13:43:03,413 - root - WARNING - waarrgg 1
+2022-04-24 13:43:03,413 - root - ERROR - errorrrrr 1
+2022-04-24 13:43:03,414 - root - WARNING - waarrgg 25
+2022-04-24 13:43:03,414 - root - ERROR - errorrrrr 25
+2022-04-24 13:43:03,414 - root - WARNING - waarrgg 2
+2022-04-24 13:43:03,414 - root - ERROR - errorrrrr 2
+2022-04-24 13:43:03,414 - root - WARNING - waarrgg 5
+2022-04-24 13:43:03,414 - root - ERROR - errorrrrr 5
+2022-04-24 13:43:03,414 - root - WARNING - waarrgg 6
+2022-04-24 13:43:03,414 - root - ERROR - errorrrrr 6
+2022-04-24 13:43:03,414 - root - WARNING - waarrgg 5
+2022-04-24 13:43:03,414 - root - ERROR - errorrrrr 5
+2022-04-24 13:43:03,414 - root - WARNING - waarrgg 6
+2022-04-24 13:43:03,414 - root - ERROR - errorrrrr 6
+2022-04-24 13:43:03,415 - root - WARNING - waarrgg 5
+2022-04-24 13:43:03,415 - root - ERROR - errorrrrr 5
+2022-04-24 13:43:03,415 - root - WARNING - waarrgg 56
+2022-04-24 13:43:03,415 - root - ERROR - errorrrrr 56
+2022-04-24 13:43:03,415 - root - WARNING - waarrgg 6
+2022-04-24 13:43:03,415 - root - ERROR - errorrrrr 6
+2022-04-24 13:43:03,415 - root - WARNING - waarrgg 5
+2022-04-24 13:43:03,415 - root - ERROR - errorrrrr 5
+2022-04-24 13:43:03,415 - root - WARNING - waarrgg 65
+2022-04-24 13:43:03,415 - root - ERROR - errorrrrr 65
+2022-04-24 13:43:03,415 - root - WARNING - waarrgg 6
+2022-04-24 13:43:03,416 - root - ERROR - errorrrrr 6
+2022-04-24 13:43:03,416 - root - WARNING - waarrgg 64
+2022-04-24 13:43:03,416 - root - ERROR - errorrrrr 64
+2022-04-24 13:43:03,416 - root - WARNING - waarrgg 6
+2022-04-24 13:43:03,416 - root - ERROR - errorrrrr 6
+2022-04-24 13:43:14,565 - root - WARNING - waarrgg 1
+2022-04-24 13:43:14,566 - root - ERROR - errorrrrr 1
+2022-04-24 13:43:14,566 - root - WARNING - waarrgg 25
+2022-04-24 13:43:14,566 - root - ERROR - errorrrrr 25
+2022-04-24 13:43:14,566 - root - WARNING - waarrgg 2
+2022-04-24 13:43:14,566 - root - ERROR - errorrrrr 2
+2022-04-24 13:43:14,566 - root - WARNING - waarrgg 5
+2022-04-24 13:43:14,566 - root - ERROR - errorrrrr 5
+2022-04-24 13:43:14,566 - root - WARNING - waarrgg 6
+2022-04-24 13:43:14,566 - root - ERROR - errorrrrr 6
+2022-04-24 13:43:14,567 - root - WARNING - waarrgg 5
+2022-04-24 13:43:14,567 - root - ERROR - errorrrrr 5
+2022-04-24 13:43:14,567 - root - WARNING - waarrgg 6
+2022-04-24 13:43:14,567 - root - ERROR - errorrrrr 6
+2022-04-24 13:43:14,567 - root - WARNING - waarrgg 5
+2022-04-24 13:43:14,567 - root - ERROR - errorrrrr 5
+2022-04-24 13:43:14,567 - root - WARNING - waarrgg 56
+2022-04-24 13:43:14,567 - root - ERROR - errorrrrr 56
+2022-04-24 13:43:14,567 - root - WARNING - waarrgg 6
+2022-04-24 13:43:14,568 - root - ERROR - errorrrrr 6
+2022-04-24 13:43:14,568 - root - WARNING - waarrgg 5
+2022-04-24 13:43:14,568 - root - ERROR - errorrrrr 5
+2022-04-24 13:43:14,568 - root - WARNING - waarrgg 65
+2022-04-24 13:43:14,568 - root - ERROR - errorrrrr 65
+2022-04-24 13:43:14,568 - root - WARNING - waarrgg 6
+2022-04-24 13:43:14,568 - root - ERROR - errorrrrr 6
+2022-04-24 13:43:14,568 - root - WARNING - waarrgg 64
+2022-04-24 13:43:14,568 - root - ERROR - errorrrrr 64
+2022-04-24 13:43:14,568 - root - WARNING - waarrgg 6
+2022-04-24 13:43:14,568 - root - ERROR - errorrrrr 6
+2022-04-24 13:44:00,684 - root - WARNING - waarrgg 1
+2022-04-24 13:44:00,684 - root - ERROR - errorrrrr 1, Track: None
+2022-04-24 13:44:00,684 - root - WARNING - waarrgg 25
+2022-04-24 13:44:00,684 - root - ERROR - errorrrrr 25, Track: None
+2022-04-24 13:44:00,684 - root - WARNING - waarrgg 2
+2022-04-24 13:44:00,684 - root - ERROR - errorrrrr 2, Track: None
+2022-04-24 13:44:00,684 - root - WARNING - waarrgg 5
+2022-04-24 13:44:00,684 - root - ERROR - errorrrrr 5, Track: None
+2022-04-24 13:44:00,684 - root - WARNING - waarrgg 6
+2022-04-24 13:44:00,685 - root - ERROR - errorrrrr 6, Track: None
+2022-04-24 13:44:00,685 - root - WARNING - waarrgg 5
+2022-04-24 13:44:00,685 - root - ERROR - errorrrrr 5, Track: None
+2022-04-24 13:44:00,685 - root - WARNING - waarrgg 6
+2022-04-24 13:44:00,685 - root - ERROR - errorrrrr 6, Track: None
+2022-04-24 13:44:00,685 - root - WARNING - waarrgg 5
+2022-04-24 13:44:00,685 - root - ERROR - errorrrrr 5, Track: None
+2022-04-24 13:44:00,685 - root - WARNING - waarrgg 56
+2022-04-24 13:44:00,685 - root - ERROR - errorrrrr 56, Track: None
+2022-04-24 13:44:00,685 - root - WARNING - waarrgg 6
+2022-04-24 13:44:00,685 - root - ERROR - errorrrrr 6, Track: None
+2022-04-24 13:44:00,686 - root - WARNING - waarrgg 5
+2022-04-24 13:44:00,686 - root - ERROR - errorrrrr 5, Track: None
+2022-04-24 13:44:00,686 - root - WARNING - waarrgg 65
+2022-04-24 13:44:00,686 - root - ERROR - errorrrrr 65, Track: None
+2022-04-24 13:44:00,686 - root - WARNING - waarrgg 6
+2022-04-24 13:44:00,686 - root - ERROR - errorrrrr 6, Track: None
+2022-04-24 13:44:00,686 - root - WARNING - waarrgg 64
+2022-04-24 13:44:00,686 - root - ERROR - errorrrrr 64, Track: None
+2022-04-24 13:44:00,686 - root - WARNING - waarrgg 6
+2022-04-24 13:44:00,686 - root - ERROR - errorrrrr 6, Track: None

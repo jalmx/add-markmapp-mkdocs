@@ -7,8 +7,13 @@ from urllib.parse import quote
     Script to add create a markmap taking all files markdown and its subtitles
 """
 
+DEBUG = False
 
-def clear_map(path_file, flag_to_start="<!-- Map site start -->", flag_to_end="<!-- Map site end -->"): 
+def clear_map(
+    path_file,
+    flag_to_start="<!-- Map site start -->",
+    flag_to_end="<!-- Map site end -->",
+):
     """Replace old file with the content without link to download pdf
 
     Args:
@@ -16,23 +21,23 @@ def clear_map(path_file, flag_to_start="<!-- Map site start -->", flag_to_end="<
         flag_to_start (str): section inside to START the markdown where to put the map
         flag_to_end (str): section inside to END the markdown where to put the map
     """
-    
+
     content = ""
 
-    write= True
-    
+    write = True
+
     with open(path_file, "r+") as md:
         print("Clear file: ", path_file)
-        
+
         for line in md.readlines():
             if line.startswith(flag_to_start):
                 write = False
             if line.startswith(flag_to_end):
                 write = True
                 continue
-            
+
             if write:
-                content += f'{line}'
+                content += f"{line}"
 
     with open(path_file, "w+") as md:
         md.writelines(content)
@@ -54,7 +59,7 @@ def inject_map(file_path, content, **options):
     content_full = ""
     with open(file_path, "r") as md:
         for line in md.readlines():
-            content_full += f'{line}'
+            content_full += f"{line}"
 
             if line.find(options["flag_to_insert"]) >= 0:
                 content_full += content
@@ -90,35 +95,48 @@ def build_section_markmap_with_link(section: dict):
     Returns:
         str: All markmap content to insert
     """
+
     def clean_accent(txt):
-        a,b = 'áéíóúüñÁÉÍÓÚÜÑ','aeiouunAEIOUUN'
-        trans = str.maketrans(a,b)
+        a, b = "áéíóúüñÁÉÍÓÚÜÑ", "aeiouunAEIOUUN"
+        trans = str.maketrans(a, b)
         return txt.translate(trans)
 
-    def generate_sub_link(link):        
-        return clean_accent(link.lower()).replace("#","").strip().replace(" ","-").replace("(","").replace(")","").replace(":","").lower()
-    
-    def generate_hash(header:str):
+    def generate_sub_link(link):
+        return (
+            clean_accent(link.lower())
+            .replace("#", "")
+            .strip()
+            .replace(" ", "-")
+            .replace("(", "")
+            .replace(")", "")
+            .replace(":", "")
+            .lower()
+        )
+
+    def generate_hash(header: str):
         return header.count("#") * "#"
-        
-    
-    def generate_link(path:str):
-        path = path.split("/")[-1].replace(".md","")
-        return  quote(path)
-        
+
+    def generate_link(path: str):
+        path = path.split("/")[-1].replace(".md", "")
+        return quote(path)
+
     section_str = ""
-    
+
     section_headers = section["structure"]
-        
+
     for key in section_headers:
         for header in section_headers[key]:
             section_str += f'#{generate_hash(header)} [{header.replace("#","").strip()}]({generate_link(section["path"])}#{generate_sub_link(header)})\n'
-            
+
         section_str += "\n"
     return section_str
 
 
-def build_markmap_with_link(list_structure_header: dict, flag_to_start="<!-- Map site start -->", flag_to_end="<!-- Map site end -->"):
+def build_markmap_with_link(
+    list_structure_header: dict,
+    flag_to_start="<!-- Map site start -->",
+    flag_to_end="<!-- Map site end -->",
+):
     """Build all content of markmap
 
     Args:
@@ -129,7 +147,7 @@ def build_markmap_with_link(list_structure_header: dict, flag_to_start="<!-- Map
     Returns:
         str: All str of markmap of the folder
     """
-    
+
     map_init = "```markmap"
     map_end = "\n```"
 
@@ -139,11 +157,15 @@ def build_markmap_with_link(list_structure_header: dict, flag_to_start="<!-- Map
     for structure in list_structure_header["list_structure"]:
         content += build_section_markmap_with_link(structure)
 
-    content += f'\n{map_end}\n{flag_to_end}\n'
+    content += f"\n{map_end}\n{flag_to_end}\n"
     return content
 
 
-def build_markmap(list_structure_header: dict, flag_to_start="<!-- Map site start -->", flag_to_end="<!-- Map site end -->"):
+def build_markmap(
+    list_structure_header: dict,
+    flag_to_start="<!-- Map site start -->",
+    flag_to_end="<!-- Map site end -->",
+):
     """Build all content of markmap
 
     Args:
@@ -161,7 +183,7 @@ def build_markmap(list_structure_header: dict, flag_to_start="<!-- Map site star
     content += f'{list_structure_header["structure_index_title"]["h1"][0]}\n\n'
 
     for structure in list_structure_header["list_structure"]:
-        content += build_section_markmap(structure['structure'])
+        content += build_section_markmap(structure["structure"])
 
     content += f'\n{map_end}\n{"<!-- AUTO GENERATED -->"}\n{flag_to_end}\n'
     return content
@@ -269,6 +291,8 @@ def get_paths_abs(base_dir, *args):
     Returns:
         List: List with all paths from folders
     """
+    if "[" in args[0] and "]" in args[1] :
+        return
 
     paths = [os.path.abspath(f"{base_dir}{os.path.sep}{path}") for path in args]
 
@@ -325,11 +349,10 @@ def clean_list_folder(list_complete: list, list_exclude: list):
     return sorted(list_complete)
 
 
+
 def main():
-    """Need to add in Markdown index.md a section with FLAG_TO_INSERT or SECCION_TO_INSERT, with this the script know where to insert all content
-    
-    """
-    SECCION_TO_INSERT = "## Mapa del "
+    """Need to add in Markdown index.md a section with FLAG_TO_INSERT or SECCION_TO_INSERT, with this the script know where to insert all content"""
+    SECCION_TO_INSERT = "## Mapa del " # no implement yet
     FLAG_TO_INSERT = "<!-- Map site insert -->"
     FLAG_START = "<!-- Map site start -->"
     FLAG_END = "<!-- Map site end -->"
@@ -356,7 +379,9 @@ def main():
                 structure_index_title = get_structure_with_hash(markdown)
                 continue
 
-            list_structure_md.append({"path":markdown ,"structure":get_structure_with_hash(markdown)})
+            list_structure_md.append(
+                {"path": markdown, "structure": get_structure_with_hash(markdown)}
+            )
 
         if file_path_index:
             print(file_path_index)
@@ -364,21 +389,77 @@ def main():
                 "index_file_path": file_path_index,
                 "list_structure": list_structure_md,
                 "structure_index_title": structure_index_title,
-                "base_dir": path
+                "base_dir": path,
             }
 
-            clear_map(file_path_index, flag_to_start=FLAG_START,
-                      flag_to_end=FLAG_END)
+            clear_map(file_path_index, flag_to_start=FLAG_START, flag_to_end=FLAG_END)
             inject_map(
-                file_path_index, 
-                build_markmap_with_link(list_structure_header=map_one, flag_to_start=FLAG_START, flag_to_end=FLAG_END),
-                flag_to_insert=FLAG_TO_INSERT)
+                file_path_index,
+                build_markmap_with_link(
+                    list_structure_header=map_one,
+                    flag_to_start=FLAG_START,
+                    flag_to_end=FLAG_END,
+                ),
+                flag_to_insert=FLAG_TO_INSERT,
+            )
         else:
-            print("=============== no have index.md, path:",
-                  path, "===============================")
+            print(
+                "=============== no have index.md, path:",
+                path,
+                "===============================",
+            )
+
+def add_map(flag_to_insert="<!-- Map site insert -->", base_dir="./docs/", debug=False, paths_to_exclude=list):
+    """Need to add in Markdown index.md a section with FLAG_TO_INSERT or SECCION_TO_INSERT, with this the script know where to insert all content"""
+    #FLAG_TO_INSERT = "<!-- Map site insert -->"
+    FLAG_START = "<!-- Map site start -->"
+    FLAG_END = "<!-- Map site end -->"
+
+    #PATH_TO_SEARCH = "../docs/"
+
+    paths_excludes = get_paths_abs(base_dir,*paths_to_exclude)
+
+    for path in clean_list_folder(get_all_folders(base_dir), paths_excludes):
+        file_path_index = ""
+        markmap = ""
+        list_structure_md = []
+        structure_index_title = None
+        for markdown in get_all_md_from_folder(path):
+            if markdown.endswith("index.md"):
+                file_path_index = markdown
+                structure_index_title = get_structure_with_hash(markdown)
+                continue
+
+            list_structure_md.append(
+                {"path": markdown, "structure": get_structure_with_hash(markdown)}
+            )
+
+        if file_path_index:
+            print(file_path_index)
+            map_one = {
+                "index_file_path": file_path_index,
+                "list_structure": list_structure_md,
+                "structure_index_title": structure_index_title,
+                "base_dir": path,
+            }
+
+            clear_map(file_path_index, flag_to_start=FLAG_START, flag_to_end=FLAG_END)
+            inject_map(
+                file_path_index,
+                build_markmap_with_link(
+                    list_structure_header=map_one,
+                    flag_to_start=FLAG_START,
+                    flag_to_end=FLAG_END,
+                ),
+                flag_to_insert=flag_to_insert,
+            )
+        else:
+            print(
+                "=============== no have index.md, path:",
+                path,
+                "===============================",
+            )
 
 
 if __name__ == "__main__":
     main()
-
-#TODO: get path to know where to search, if inside folder contain a mkdocs.yml and docs folder, in automatic read the folder and insert the map

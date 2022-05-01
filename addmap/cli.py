@@ -41,16 +41,12 @@ def main():
 
     argument = parser.parse_args()
 
-    print(argument)
-    print("===================")
-
     add_map.add_map(
         flag_to_insert=argument.flag,
         base_dir=argument.path,
         debug=argument.verbose,
         paths_to_exclude=argument.exclude
     )
-
 
 if __name__ == "__main__":
     main()

@@ -1,13 +1,10 @@
-import os
-from pathlib import Path
-from urllib.parse import quote
-
-
 """
     Script to add create a markmap taking all files markdown and its subtitles
 """
 
-DEBUG = False
+import os
+from pathlib import Path
+from urllib.parse import quote
 
 def clear_map(
     path_file,
@@ -110,6 +107,7 @@ def build_section_markmap_with_link(section: dict):
             .replace("(", "")
             .replace(")", "")
             .replace(":", "")
+            .replace("`", "")
             .lower()
         )
 
@@ -347,7 +345,6 @@ def clean_list_folder(list_complete: list, list_exclude: list):
                 list_complete.remove(path)
 
     return sorted(list_complete)
-
 
 
 def main():

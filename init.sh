@@ -1,5 +1,5 @@
 #!/bin/bash
-# Create virtual env, activate and Install alls modules python
+# Create virtual env, activate and Install all modules python
 #sudo apt install python3-ven
 
 python3 -m venv .

@@ -3,7 +3,7 @@ import argparse
 import add_map
 
 # options
-# path = path where existe folder docs and file config yml
+# path = path where exist folder docs and file config yml
 # exclude = paths to excludes, default
 # flag_to_insert =
 # clear = delete the map from file
@@ -11,6 +11,7 @@ import add_map
 
 """All logical to create a cli with options to run
     """
+
 
 def main():
     parser = argparse.ArgumentParser(
@@ -47,6 +48,7 @@ def main():
         debug=argument.verbose,
         paths_to_exclude=argument.exclude
     )
+
 
 if __name__ == "__main__":
     main()

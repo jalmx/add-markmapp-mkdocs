@@ -314,8 +314,8 @@ def get_all_folders(path):
             if len(get_all_folders(os.path.abspath(file))):
                 list_dir += get_all_folders(os.path.abspath(file))
 
-    if not (os.path.abspath(path) is list_dir):
-        list_dir.append(os.path.abspath(path))
+    # if not (os.path.abspath(path) is list_dir):
+    #    list_dir.append(os.path.abspath(path))
 
     return sorted(set(list_dir))
 
@@ -335,23 +335,35 @@ def clean_list_folder(list_complete: list, list_exclude: list):
         if exclude in list_complete:
             list_complete.remove(exclude)
 
-    # create a list with paths with wildcard
-    list_wildcard = [
-        exclude.replace("/*", "") for exclude in list_exclude if exclude.count("*")
-    ]
-
-    for path in list_complete:
-        for exclude in list_wildcard:
-            if path.startswith(exclude):
-                list_complete.remove(path)
+    # # create a list with paths with wildcard
+    # list_wildcard = [
+    #     exclude.replace("/*", "") for exclude in list_exclude if exclude.count("*")
+    # ]
+    #
+    # for path in list_complete:
+    #     for exclude in list_wildcard:
+    #         if path.startswith(exclude):
+    #             list_complete.remove(path)
 
     return sorted(list_complete)
 
 
 def main():
     """testing function"""
-    PATH_TO_SEARCH = "../docs/"
-    add_map(base_dir="../test/", debug=True, paths_to_exclude=[""])
+    add_map(base_dir="../test/", debug=True, paths_to_exclude=["../test/docs/capitulo1/", "../test/docs/capitulo2/*"])
+
+
+def get_all_paths_to_exclude(paths_excludes=[]):
+    if not paths_excludes:
+        return []
+
+    list_to_exclude = [str(p).replace("*", "") for p in paths_excludes]
+
+    for path in paths_excludes:
+        if str(path).endswith("/*"):
+            list_to_exclude += get_all_folders(path.replace("*", ""))
+
+    return list_to_exclude
 
 
 
@@ -362,13 +374,11 @@ def add_map(flag_to_insert="<!-- Map site insert -->", base_dir="./docs/", debug
     FLAG_START = "<!-- Map site start -->"
     FLAG_END = "<!-- Map site end -->"
 
-    # PATH_TO_SEARCH = "../docs/"
-
+    print("Starting...")
     paths_excludes = get_paths_abs(base_dir, *paths_to_exclude)
 
-    for path in clean_list_folder(get_all_folders(base_dir), paths_excludes):
+    for path in clean_list_folder(get_all_folders(base_dir), get_all_paths_to_exclude(paths_excludes)):
         file_path_index = ""
-        markmap = ""
         list_structure_md = []
         structure_index_title = None
         for markdown in get_all_md_from_folder(path):
@@ -406,7 +416,7 @@ def add_map(flag_to_insert="<!-- Map site insert -->", base_dir="./docs/", debug
                 path,
                 "===============================",
             )
-
+    print("** Done **")
 
 if __name__ == "__main__":
     main()

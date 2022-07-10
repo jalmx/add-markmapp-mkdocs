@@ -1,4 +1,4 @@
 #!/bin/bash
 
-source ./bin/activate
+source venv/bin/activate
 mkdocs serve

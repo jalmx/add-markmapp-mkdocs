@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import argparse
 
 import add_map
@@ -46,13 +47,9 @@ def main():
         flag_to_insert=argument.flag,
         base_dir=argument.path,
         debug=argument.verbose,
-        paths_to_exclude=argument.exclude
+        paths_to_exclude=(argument.exclude or [])
     )
 
 
 if __name__ == "__main__":
     main()
-
-# https://realpython.com/command-line-interfaces-python-argparse/
-# https://docs.python.org/3/library/argparse.html#module-argparse
-# https://betterprogramming.pub/python-click-building-your-first-command-line-interface-application-6947d5319ef7

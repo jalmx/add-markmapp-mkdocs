@@ -1,5 +1,4 @@
 # TODO
 
-- [ ] ignorar los bloque de código
-- [ ] Jalar el nombre de la carpeta que esta dentro de otra para colocar ese nombre en el `index.md`
+- [ ] ignorar los bloque de código por si viene un comentario con hash
 - [ ] agregar la autodoc con mkdocs-material o spy...

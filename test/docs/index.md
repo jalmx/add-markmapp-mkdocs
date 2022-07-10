@@ -32,5 +32,3 @@ En construcción, ir a [el inicio del capitulo 1](capitulo1/00_introduccion.md)
 
 
 
-
-

@@ -2,6 +2,7 @@
 
 En esta sección estaremos abarcando el uso de la tarjeta [ESP8266 NodeMCU](https://www.nodemcu.com/index_en.html) utilizando [Micropython](https://micropython.org).
 
+
 ## Mapa del capítulo 2 TEST
 
 <!-- Map site insert -->

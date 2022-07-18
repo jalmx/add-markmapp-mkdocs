@@ -1,7 +1,8 @@
-#! /bin/bash
-
-# activate venv and Install alls modules python
+#!/usr/bin/sh
+#activate venv and Install alls modules python
 #sudo apt install python3-ven
+
+python3 -m venv vevn
 
 source venv/bin/activate
 

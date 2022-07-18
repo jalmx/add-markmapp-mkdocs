@@ -9,8 +9,8 @@ This was designed to work together `mkdocs` and `mkdocs-markmap`.
 
 You can view where to used:
 
-[https://github.com/jalmx/micro-22](https://github.com/jalmx/micro-22)
-[https://www.alejandro-leyva.com/algoritmos/](https://www.alejandro-leyva.com/algoritmos/)
+- [https://github.com/jalmx/micro-22](https://github.com/jalmx/micro-22)
+- [https://www.alejandro-leyva.com/algoritmos/](https://www.alejandro-leyva.com/algoritmos/)
 
 ## Example files
 

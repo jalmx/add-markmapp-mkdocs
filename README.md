@@ -79,3 +79,6 @@ optional arguments:
   -e paths/to/exclude [paths/to/exclude ...], --exclude paths/to/exclude [paths/to/exclude ...]
                         Exclude directories or folders inside PATH. Ex: -e path/to/exclude path/to/exclude2
 ```
+## TODO
+
+- [ ] If not exist the folder `docs` not throw error

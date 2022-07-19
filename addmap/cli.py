@@ -1,7 +1,8 @@
 #!/usr/bin/python3
+
 import argparse
 
-import add_map
+from addmap import add_map
 
 # options
 # path = path where exist folder docs and file config yml

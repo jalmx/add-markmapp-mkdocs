@@ -1,0 +1,2 @@
+[console_scripts]
+addmap = addmap.cli:main

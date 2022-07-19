@@ -6,5 +6,6 @@ pyvenv.cfg
 share
 etc
 .directory
-**/__pycache__/**
 *.log
+__pycache__
+

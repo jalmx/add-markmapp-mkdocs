@@ -44,12 +44,15 @@ def main():
 
     argument = parser.parse_args()
 
-    add_map.add_map(
-        flag_to_insert=argument.flag,
-        base_dir=argument.path,
-        debug=argument.verbose,
-        paths_to_exclude=(argument.exclude or [])
-    )
+    try:
+        add_map(
+            flag_to_insert=argument.flag,
+            base_dir=argument.path,
+            debug=argument.verbose,
+            paths_to_exclude=(argument.exclude or [])
+        )
+    except:
+        print("Error with the path, please exec addmap --help")
 
 
 if __name__ == "__main__":
